@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective로 원근감 설정하기</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 150px 50px;
+            border: 1px solid #000;
+            float: left;
+        }
+        div p {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            opacity: 0.3;
+            transform: rotateY(50deg);
+        }
+        div:nth-child(1) {perspective: 150px;}
+        div:nth-child(2) {perspective: 800px;}
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>
